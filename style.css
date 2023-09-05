@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "iranyekan";
+  list-style: none;
+}
+
+/*  VARIABLES : */
+:root {
+  --primaryColor: #f7daf6;
+  --secondaryColor: #3f47cc;
+  --mainWhite: #fff;
+  --mainBlack: #222;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+  --mainRed: #db2777;
+  --bodyColor: #f6f6f6;
+}
+
+body {
+  font-family: "iranyekan";
+  color: var(--mainBlack);
+  background-color: var(--bodyColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-container {
+  display: flex;
+}
+.name-container {
+  margin-top: 1rem;
+  width: 25rem;
+}
+
+form {
+  background-color: var(--primaryColor);
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--mainBlack);
+  overflow: hidden;
+}
+
+form button {
+  background-color: var(--secondaryColor);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: var(--mainWhite);
+  margin: 0 auto;
+  padding: 5px 30px;
+}
+form button:hover {
+  background-color: var(--mainRed);
+  color: var(--mainBlack);
+}
+
+label {
+  padding: 20px 0 0 20px;
+  font-family: cursive;
+  font-weight: bold;
+  position: relative;
+  top: 25px;
+}
+
+input {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  margin: auto;
+  width: 200px;
+  padding: 5px 0;
+  border: 3px solid var(--mainBlack);
+}
+
+.name {
+  background-color: var(--mainWhite);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  display: flex;
+  border: 1px solid var(--mainBlack);
+}
+.name .name__title {
+  color: var(--mainBlack);
+  font-weight: bold;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.name button {
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fa-times {
+  color: var(--mainRed);
+  font-size: 2rem;
+}
+
+button {
+  border: none;
+  outline: 0;
+}
+button > i {
+  pointer-events: none;
+}
